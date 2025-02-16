@@ -1,0 +1,75 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phishing Tespit Testi</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Başlangıç Ekranı -->
+        <div id="start-screen" class="screen">
+            <h1>🕵️ Phishing Tespit Testi</h1>
+            <div class="rules">
+                <h2>Test Kuralları</h2>
+                <ul>
+                    <li>Her resmi dikkatlice inceleyin</li>
+                    <li>Phishing mi yoksa gerçek mi olduğuna karar verin</li>
+                    <li>Her sorudan sonra açıklamayı görüntüleyebilirsiniz</li>
+                    <li>Test sonunda detaylı bir değerlendirme alacaksınız</li>
+                </ul>
+            </div>
+            <button id="start-btn" class="btn">Teste Başla</button>
+        </div>
+
+        <!-- Quiz Ekranı -->
+        <div id="quiz-screen" class="screen hidden">
+            <div class="progress-bar">
+                <div id="progress" class="progress"></div>
+            </div>
+            <div class="question-count">
+                Soru <span id="current-question">1</span>/<span id="total-questions">0</span>
+            </div>
+            <div class="question-container">
+                <img id="question-image" src="" alt="E-posta görüntüsü">
+                <div class="buttons">
+                    <button id="phishing-btn" class="btn">📵 Phishing</button>
+                    <button id="real-btn" class="btn">✅ Gerçek</button>
+                </div>
+                <div id="feedback" class="feedback hidden">
+                    <p id="feedback-text"></p>
+                    <button id="show-explanation-btn" class="btn">Açıklamayı Göster</button>
+                    <div id="explanation" class="explanation hidden"></div>
+                    <button id="next-btn" class="btn">Sonraki Soru</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sonuç Ekranı -->
+        <div id="result-screen" class="screen hidden">
+            <h1>🎉 Test Tamamlandı!</h1>
+            <div class="score">
+                <p>Puanınız: <span id="score">0</span>/<span id="total">0</span></p>
+                <div class="progress-bar">
+                    <div id="score-progress" class="progress"></div>
+                </div>
+            </div>
+            <div class="tips">
+                <h2>Önemli Güvenlik Tavsiyeleri</h2>
+                <ul>
+                    <li>E-posta adreslerini her zaman dikkatle kontrol edin</li>
+                    <li>Aciliyet bildiren mesajlara karşı temkinli olun</li>
+                    <li>Şüpheli bağlantılara tıklamadan önce URL'i kontrol edin</li>
+                    <li>Kişisel bilgilerinizi paylaşmadan önce iki kez düşünün</li>
+                </ul>
+            </div>
+            <button id="restart-btn" class="btn">Testi Yeniden Başlat</button>
+        </div>
+    </div>
+
+    <script src="js/questions.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>

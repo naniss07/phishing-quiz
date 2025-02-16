@@ -1,0 +1,165 @@
+/* style.css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f0f2f5;
+}
+
+.container {
+    max-width: 800px;
+    margin: 2rem auto;
+    padding: 1rem;
+}
+
+.screen {
+    background: white;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.hidden {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.rules {
+    margin-bottom: 2rem;
+}
+
+.rules h2 {
+    margin-bottom: 1rem;
+    color: #333;
+}
+
+.rules ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    border: none;
+    border-radius: 4px;
+    background-color: #0066cc;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0052a3;
+}
+
+.btn:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+/* Yeni eklenen buton stilleri */
+.btn.selected {
+    border: 3px solid;
+}
+
+.btn.selected.correct {
+    background-color: #4caf50;
+    border-color: #2e7d32;
+}
+
+.btn.selected.incorrect {
+    background-color: #f44336;
+    border-color: #c62828;
+}
+
+.progress-bar {
+    width: 100%;
+    height: 8px;
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    margin: 1rem 0;
+}
+
+.progress {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 4px;
+    transition: width 0.3s ease;
+}
+
+.question-count {
+    text-align: center;
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+
+.question-container img {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.feedback {
+    margin-top: 1rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.feedback.correct {
+    background-color: #e8f5e9;
+    color: #2e7d32;
+}
+
+.feedback.incorrect {
+    background-color: #ffebee;
+    color: #c62828;
+}
+
+.explanation {
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #e3f2fd;
+    border-radius: 4px;
+    color: #1565c0;
+}
+
+.score {
+    text-align: center;
+    margin: 2rem 0;
+    font-size: 1.5rem;
+}
+
+.tips {
+    margin: 2rem 0;
+}
+
+.tips h2 {
+    margin-bottom: 1rem;
+}
+
+.tips ul {
+    list-style-position: inside;
+    margin-left: 1rem;
+}
