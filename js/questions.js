@@ -18,7 +18,7 @@ const questionsData = [
     {
         "image": "resimler/resim4.png",
         "correct": "phishing",
-        "explanation": "Burada dolandırıcılar, dolandırıldığını iddia ederek hedef kişiyi kandırmaya çalışıyor. Hedefini iletişimidevam ettirmek için telefon numarsı vererek sömürmeye çalışılıyor"
+        "explanation": "Burada dolandırıcılar, kullanıcıları kandırıp harakete geçmeye teşvik etmek için yaygın olarak kullanılan bir tekniğe başvurmuş ve durumun aciliyetini vurgulamaış. Hedefini iletişimidevam ettirmek için telefon numarsı vererek sömürmeye çalışılıyor"
     },
     {
         "image": "resimler/resim5.png",
@@ -43,7 +43,7 @@ const questionsData = [
     {
         "image": "resimler/resim9.png",
         "correct": "phishing",
-        "explanation": "Dikat ederseniz göndericinin adresi sahtedir."
+        "explanation": "Dikat ederseniz 'PTT-Noreply-YRJ3a2z@854876585847565.it' gerçek bir PTT adresi değil. Link üzerine gelindiğinde görülen 'ptt-kargotakip.xyz' adresi resmi PTT domain'i değil !!"
     },
     {
         "image": "resimler/resim10.png",
@@ -63,17 +63,17 @@ const questionsData = [
     {
         "image": "resimler/resim13.png",
         "correct": "phishing",
-        "explanation": "Burda saldırgan sizin hesabınızdan para çıkışı olucak iddası ile karşı tarafı korkutarak E-postadaki bağlantıya tıklamamak ve kişisel bilgilerinizi çalmaya çalışıyor.."
+        "explanation": "Burda saldırgan sizin hesabınızdan para çıkışı olucak iddası ile karşı tarafı korkutarak E-postadaki bağlantıya tıklayarak, kişisel bilgilerinizi çalmaya çalışıyor."
     },
     {
         "image": "resimler/resim14.png",
         "correct": "phishing",
-        "explanation": "Selamlama geneldir. Bir devlet gelir kurumu, bir e-postada asla geri ödeme tutarı gibi belirli bir bilgi vermez. Ayrıca, mesajın altındaki URL'de yer alan alan adı gönderenin adından farklıdır ve herhangi bir ek iletişim bilgisi verilmemiştir."
+        "explanation": "Selamlama geneldir. Bir devlet gelir kurumu, bir e-postada asla geri ödeme tutarı gibi belirli bir bilgi vermez. Ayrıca, mesajın altındaki Link üzerine gelindiğinde görülen 'vergiiade-gov.xyz' adresi resmi bir devlet kurumu domain'i değil"
     },
     {
         "image": "resimler/resim15.png",
         "correct": "phishing",
-        "explanation": "E-postanın göndericisi kuruluşunuzla ilgili değil. Dikkat ederseniz bağlantının üzerinde ki adresin doğru yönlendirmemektedir. Verilen talimatları izleyip formu doldurursanız, kullanıcı kimliğiniz ve şifreniz gibi bilgileri bir siber suçluya ifşa etmiş olursunuz."
+        "explanation": "'plop.co' gibi güvenilir olmayan bir domain adresi kullanılıyor ve acil karar vermeye zorlamak için bir süre sınırı belirlenmiş. Eğer verilen talimatları takip edip formu doldurursanız, kullanıcı kimliğiniz, şifreniz ve diğer hassas bilgilerinizi siber suçlulara ifşa etme riskiyle karşı karşıya kalırsınız."
     },
     {
         "image": "resimler/resim16.png",
@@ -88,7 +88,7 @@ const questionsData = [
     {
         "image": "resimler/resim18.png",
         "correct": "phishing",
-        "explanation": "Dikatt ederseniz gönderici adresi 'akbonk-guvenlik.com' (Akbank değil) ve size bir aciliyet oluşturan, korku ve endişeye yönelik bir mesaj barındırmış bu şekilde sizde o an hem linke tıklayıp hesap bilgilerinizi verebilirsiniz."
+        "explanation": "Dikkat ederseniz gönderici adresi 'akbonk-guvenlik.com' (Akbank değil) ve size bir aciliyet oluşturan, korku ve endişeye yönelik bir mesaj barındırmış bu şekilde sizde o an hem linke tıklayıp hesap bilgilerinizi verebilirsiniz."
     },
     {
         "image": "resimler/resim19.png",
@@ -133,7 +133,21 @@ const questionsData = [
     {
         "image": "resimler/resim27.png",
         "correct": "real",
-        "explanation": "Gönderici adı doğru formatta, Resmi banka domain'i bulunmaktadır."
+        "explanation": "Gönderici adı doğru formatta, Resmi banka domain'i bulunmaktadır ve Enpara'dan gelen rutin bir bilgilendirmedir. Hesabınıza yapılan transferi gösterir."
+    },
+    {
+        "image": "resimler/resim28.png",
+        "correct": "phishing",
+        "explanation": "Yüksek miktarlı sahte işlem bildirimi ile Korku ve panik yaratarak acil eylem talep etmeye çalışıyor. 'isbank-tr.com' gibi resmi olmayan alan adı bunmakta."
+    },
+    {
+        "image": "resimler/resim29.png",
+        "correct": "real",
+        "explanation": "Dikkat ederseniz gönderen adres @amazon.com.tr uzantılıdır, Tüm bağlantılar amazon.com.tr alan adına yönlenmektedir. Büyük şirketler, resmi e-postalarında 'Sayın [Adınız]' gibi kişisel hitaplar kullanır."
+    },
+    {
+        "image": "resimler/resim30.png",
+        "correct": "real",
+        "explanation": "Gönderici adresi doğrudur.  Bu e-postada, kullanıcıya LinkedIn'de yeni bir mesajı olduğu bildiriliyor ve mesajı görüntülemek için bir bağlantı sağlanıyor. Bağlantı alanına geldiğinizde bağlantı doğru adrese yönlendirmektedir"
     }
-    
 ];
